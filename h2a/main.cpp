@@ -1,7 +1,8 @@
 #include <iostream>
+#include <memory>
 #include "car.h"
 #include "rectangle.h"
-using namespace std;
+#include "student.h"
 
 int main()
 {
@@ -21,6 +22,15 @@ int main()
     std::cout << "Rectangle Area: " << area << std::endl;
     std::cout << "Rectangle circcum: " << circum << std::endl;
     delete nelio;
+    std::unique_ptr<Student> student = std::make_unique<Student>();
+    student->setName("Johannes");
+    student->setStudentNumber(1444);
+    student->setAverage(4.12);
+    std::cout << "Student name: " << student->getName() << std::endl;
+    std::cout << "Student number: " << student->getStudentNumber() << std::endl;
+    std::cout << "Student average: " << student->getAverage() << std::endl;
+
+
 
 
     return 0;
