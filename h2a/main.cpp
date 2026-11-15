@@ -13,13 +13,15 @@ int main()
 
     car1.printData();
 
-    Rectangle nelio;
-    nelio.setWidth(4);
-    nelio.setHeight(3);
-    double area = nelio.getArea();
-    double circum = nelio.getCircum();
+    Rectangle* nelio = new Rectangle();
+    nelio->setWidth(4);
+    nelio->setHeight(3);
+    double area = nelio->getArea();
+    double circum = nelio->getCircum();
     std::cout << "Rectangle Area: " << area << std::endl;
     std::cout << "Rectangle circcum: " << circum << std::endl;
+    delete nelio;
+
 
     return 0;
 }
