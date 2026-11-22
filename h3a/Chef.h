@@ -1,14 +1,14 @@
 #ifndef CHEF_H
 #define CHEF_H
-
+#include <string>
 class Chef
 {
 private:
 
 protected:
-    string name;
+    std::string name;
 public:
-    Chef();
+    Chef(std::string);
     void makeSalad();
     void makeSoup();
 };
