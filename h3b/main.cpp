@@ -9,6 +9,8 @@ using namespace std;
 
 int main()
 {
+    unique_ptr<Dog> dog = make_unique<Dog>();
+    dog->callOut();
     // Luodaan vektori Animal-olioita omistaville älyosoittimille
     vector<unique_ptr<Animal>> animals;
 
