@@ -11,6 +11,7 @@ public:
     Chef(std::string);
     void makeSalad();
     void makeSoup();
+    ~Chef();
 };
 
 #endif // CHEF_H
